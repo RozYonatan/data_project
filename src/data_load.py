@@ -9,5 +9,5 @@ class DataLoader:
             df = pd.read_csv(self.filepath)
             return df
         except FileNotFoundError:
-            print(f"eror: the {self.filepath} not found")
+            print(f"Error: the {self.filepath} not found")
             return pd.DataFrame()
